@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hello World</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
+    :root { color-scheme: light dark; }
     body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      font-size: 3rem;
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.5;
+    }
+    /* Typography-only changes to the Hello World text */
+    .hello {
+      font-size: clamp(2rem, 6vw, 4rem); /* larger text */
+      font-weight: 800;                  /* bold */
+      color: #1e40af;                    /* blue */
     }
   </style>
 </head>
 <body>
-  Hello World
+  <main>
+    <h1 class="hello">Hello, World!</h1>
+  </main>
 </body>
 </html>
